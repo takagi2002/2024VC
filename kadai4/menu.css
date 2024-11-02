@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+}
+
+.ddmenu {
+    margin: 0;
+    background: #CC0000;
+    padding: 0 0 0 15px;
+
+    li {
+        width: 125px;
+        display: inline-block;
+        list-style-type: none;
+        position: relative;
+        
+        a {
+            background: #CC0000;
+            color: white;
+            line-height: 40px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+            display: block;
+            cursor: pointer;
+        }
+    }
+
+    ul {
+        display: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+    }
+
+    a:hover {
+        background: #FFDDDD;
+        color: #DD0000;
+    }
+
+    li:hover ul {
+        display: block;
+    }
+}
