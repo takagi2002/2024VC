@@ -33,7 +33,7 @@ header {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     color: var(--c2);
-    z-index: 2;
+    z-index: 5;
 
     nav {
         display: flex;
