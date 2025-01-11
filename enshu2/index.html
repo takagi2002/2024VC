@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title>牛工大 - トップ</title>
+</head>
+<body>
+    <video autoplay muted loop>
+        <source src="static/yakinuku.mp4">
+    </video>
+
+    <header>
+        <a href="#" class="site-title">
+            <img src="static/logo.png" alt="ALT">
+        </a>
+        <nav>
+            <a href="#">サイトトップ</a>
+            <a href="#about">当店について</a>
+            <a href="#menu">提供料理一覧</a>
+            <a href="#reserv">ご予約フォーム</a>
+        </nav>
+    </header>
+
+    <div class="title">
+        <div class="logo">
+            <img src="static/logo.png" alt="ALT">
+        </div>
+    </div>
+
+    <a class="cta" href="#reserv">
+        <img src="static/oniku_party.gif" alt="ALT">
+        <span>ご予約はこちらから</span>
+    </a>
+
+    <main>
+        <section class="page-section mb-4" id="about">
+            <div class="container">
+                <h2 class="page-section-heading text-center text-uppercase">当店について</h2>
+                <div class="col-lg-12 mt-3">
+                    <div class="lead">
+                        <p>当店は、しちりんを使った本格炭火焼肉店です。</p>
+                        <p>炭火焼肉でも煙などの排気には最新鋭の換気システムを導入しています。</p>
+                        <p>オーダーは、タッチパネルから行ってください。</p>
+                        <p>会計は、キャッシュレス歓迎、キャッシュレスの場合は１０％オフ</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section mb-4">
+            <div class="container">
+                <div class="col-lg-12">
+                    <img src="static/mise1.jpg" alt="ALT">
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section" id="menu">
+            <div class="container">
+                <h2 class="page-section-heading text-center text-uppercase">提供料理一覧</h2>
+                <div class="row justify-content-center mt-3">
+                    <div class="col-lg-4 col-md-4 mb-4 cursor" data-bs-toggle="modal" data-bs-target="#food1Modal">
+                        <img src="static/tori_momo.jpg" alt="ALT">
+                    </div>
+                    <div class="col-lg-4 col-md-4 mb-4 cursor" data-bs-toggle="modal" data-bs-target="#food2Modal">
+                        <img src="static/tori_yagen.jpg" alt="ALT">
+                    </div>
+                    <div class="col-lg-4 col-md-4 mb-4 cursor" data-bs-toggle="modal" data-bs-target="#food3Modal">
+                        <img src="static/koudai_karubi.jpg" alt="ALT">
+                    </div>
+                    <div class="col-lg-4 col-md-4 mb-4 cursor" data-bs-toggle="modal" data-bs-target="#food4Modal">
+                        <img src="static/karubi.jpg" alt="ALT">
+                    </div>
+                    <div class="col-lg-4 col-md-4 mb-4 cursor" data-bs-toggle="modal" data-bs-target="#food5Modal">
+                        <img src="static/harami.jpg" alt="ALT">
+                    </div>
+                    <div class="col-lg-4 col-md-4 mb-4 cursor" data-bs-toggle="modal" data-bs-target="#food6Modal">
+                        <img src="static/buta_horumon.jpg" alt="ALT">
+                    </div>
+                    <div class="col-lg-4 col-md-4 mb-4 cursor" data-bs-toggle="modal" data-bs-target="#food7Modal">
+                        <img src="static/buta_tan.jpg" alt="ALT">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section" id="reserv">
+            <div class="container">
+                <h2 class="page-section-heading text-center text-uppercase">ご予約フォーム</h2>
+                <div class="row justify-content-center mt-3">
+                    <div class="col-lg-6 col-md-4 mb-4">
+                        <img src="static/map.png" alt="ALT">
+                    </div>
+                    <div class="col-lg-6 col-md-4 mb-4">
+                        <form id="reservForm">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control is-valid" placeholder="Plz" data-sb-validation="required" data-sb-can-submit="no">
+                                <label for="name">ご予約名</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control is-valid" placeholder="Plz" data-sb-validation="required" data-sb-can-submit="no">
+                                <label for="email">メールアドレス</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control is-valid" placeholder="Plz" data-sb-validation="required" data-sb-can-submit="no">
+                                <label for="phone">電話番号</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required" data-sb-can-submit="no"></textarea>
+                                <label for="message">店舗側への確認事項</label>
+                            </div>
+                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">予約する</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-2">所在地</h4>
+                    <p class="lead mb-0">〒000-0000 焼肉市美食町1-2-3</p>
+                </div>
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-2">電話番号</h4>
+                    <p class="lead mb-0">000-456-7890</p>
+                </div>
+                <div class="col-lg-4 mb-lg-0">
+                    <h4 class="text-uppercase mb-2">メール</h4>
+                    <p class="lead mb-0">info@yakiniki.umai.up</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- モーダル -->
+    <div class="modal fade" id="food1Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background: #222222">
+                <span>とりもも</span>
+                <p>お子様にも人気。やわらかくてジューシー</p>
+                <img src="static/tori_momo.jpg" alt="ALT">
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="food2Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background: #222222">
+                <span>ハラミ付きヤゲン</span>
+                <p>ジューシーなハラミがついた、コリコリの軟骨</p>
+                <img src="static/tori_yagen.jpg" alt="ALT">
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="food3Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background: #222222">
+                <span>工大カルビ</span>
+                <p>骨と骨の間の旨味の詰まった部位を丁寧にカット</p>
+                <img src="static/koudai_karubi.jpg" alt="ALT">
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="food4Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background: #222222">
+                <span>カルビ</span>
+                <p>牛肉のうまみ、甘味と香りが楽しめます。最も人気のある定番メニューのひとつ。</p>
+                <img src="static/karubi.jpg" alt="ALT">
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="food5Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background: #222222">
+                <span>ハラミ</span>
+                <p>国民のアイドル！お店一押し</p>
+                <img src="static/harami.jpg" alt="ALT">
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="food6Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background: #222222">
+                <span>やみつき豚ホルモン</span>
+                <p>この食感クセになる</p>
+                <img src="static/buta_horumon.jpg" alt="ALT">
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="food7Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background: #222222">
+                <span>トンたん塩</span>
+                <p>コリコリ食感を楽しむ。牛タンでなくても満足できます。</p>
+                <img src="static/buta_tan.jpg" alt="ALT">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
