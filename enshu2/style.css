@@ -173,6 +173,7 @@ footer {
 #reservForm {
     input, textarea {
         background: #222222;
+        color: #F5F5F5;
     }
 
     button {
